@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: rolex-mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: Senha123
+      MYSQL_DATABASE: data-base-rolex
+      MYSQL_USER: cabeceiradev
+      MYSQL_PASSWORD: Senha123
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./src/database/mariadb:/var/lib/mysql
