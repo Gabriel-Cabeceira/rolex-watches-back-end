@@ -3,7 +3,7 @@ import { User } from "../entities/User";
 
 export const AppDataSource = new DataSource({
     type: "mariadb",
-    host: "172.17.0.1",
+    host: "34.226.212.202",
     port: 3306,
     username: "cabeceiradev",
     password: "Senha123",
